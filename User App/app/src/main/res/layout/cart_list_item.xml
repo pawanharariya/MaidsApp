@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/green_corner"
+    android:elevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/cart_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/basic">
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Added"
+            android:textAllCaps="true"
+            android:textColor="@color/button"
+            android:textSize="17sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/category"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="5dp"
+            android:src="@color/basicDark" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:text="Pawan Singh Harariya" />
+
+        <TextView
+            android:id="@+id/age_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:textColor="#616161"
+            android:textSize="15sp"
+            tools:text="Age : 21" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:text="Rs. 200/hour" />
+
+        <TextView
+            android:id="@+id/availability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age_sex"
+            android:layout_alignLeft="@+id/age_sex"
+            android:layout_toRightOf="@+id/cost"
+            android:textAllCaps="true"
+            android:textColor="@color/available"
+            android:textSize="15sp"
+            tools:text="Available" />
+
+        <Button
+            android:id="@+id/delete_from_cart"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/image"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/green_corner"
+            android:text="Remove from cart"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

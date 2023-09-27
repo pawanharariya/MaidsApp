@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.psh.maids.Activities.SplashScreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Maids App"
+        android:textColor="@color/white"
+        android:textSize="48dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="The complete solution to all maid related problems"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/maidicon" />
+
+</LinearLayout>

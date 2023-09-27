@@ -1,0 +1,179 @@
+{
+  "project_info": {
+    "project_number": "577433426395",
+    "firebase_url": "https://brandnew-83b22.firebaseio.com",
+    "project_id": "brandnew-83b22",
+    "storage_bucket": "brandnew-83b22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577433426395:android:0ed4d4d529ba04033e2ffe",
+        "android_client_info": {
+          "package_name": "com.anvay.customerpanel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577433426395-2l5e29mq9s0adfqgq2l4ndb7mmhpu177.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anvay.customerpanel",
+            "certificate_hash": "0f7c8a42b8f588e98646a0c96f7c222131892501"
+          }
+        },
+        {
+          "client_id": "577433426395-3jrqmsmu9cr3ou7642gek07467jqpoh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4LqTGCZ5_TOyner_4Cxyuleb5u5t9A9o"
+        },
+        {
+          "current_key": "AIzaSyCMDPUBWOORqYryD2kRw8bkK79FG-OpQ_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577433426395-3jrqmsmu9cr3ou7642gek07467jqpoh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577433426395:android:239e9759cd79335c3e2ffe",
+        "android_client_info": {
+          "package_name": "com.anvay.partnerspanel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577433426395-3jrqmsmu9cr3ou7642gek07467jqpoh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4LqTGCZ5_TOyner_4Cxyuleb5u5t9A9o"
+        },
+        {
+          "current_key": "AIzaSyCMDPUBWOORqYryD2kRw8bkK79FG-OpQ_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577433426395-3jrqmsmu9cr3ou7642gek07467jqpoh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577433426395:android:6b61e73e98f3af46",
+        "android_client_info": {
+          "package_name": "com.logistic.grocerybm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577433426395-5u38solh4jc41js2f1uhgbmtp2fdmnb9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.logistic.grocerybm",
+            "certificate_hash": "7ef32fbb42f0bd3b0f8fb92a080943fe6f51dcb5"
+          }
+        },
+        {
+          "client_id": "577433426395-t0hpbma5oaoipfggob13588rhumbp529.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.logistic.grocerybm",
+            "certificate_hash": "eda09a493c3d3ead0265c2ed0c3fea5948f3bf52"
+          }
+        },
+        {
+          "client_id": "577433426395-slr051ffn0666mfc1jm01ssfdn19u3ib.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.logistic.grocerybm",
+            "certificate_hash": "5b2eb66659651d4e0be4ad25f77bd6ebfd557aa4"
+          }
+        },
+        {
+          "client_id": "577433426395-3jrqmsmu9cr3ou7642gek07467jqpoh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4LqTGCZ5_TOyner_4Cxyuleb5u5t9A9o"
+        },
+        {
+          "current_key": "AIzaSyCMDPUBWOORqYryD2kRw8bkK79FG-OpQ_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577433426395-3jrqmsmu9cr3ou7642gek07467jqpoh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577433426395:android:dfbdfd88690241fc",
+        "android_client_info": {
+          "package_name": "com.logistic.splashactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577433426395-8gvge6rm6rancickbejf5p8s4p0fj3jj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.logistic.splashactivity",
+            "certificate_hash": "5b2eb66659651d4e0be4ad25f77bd6ebfd557aa4"
+          }
+        },
+        {
+          "client_id": "577433426395-3jrqmsmu9cr3ou7642gek07467jqpoh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4LqTGCZ5_TOyner_4Cxyuleb5u5t9A9o"
+        },
+        {
+          "current_key": "AIzaSyCMDPUBWOORqYryD2kRw8bkK79FG-OpQ_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577433426395-3jrqmsmu9cr3ou7642gek07467jqpoh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

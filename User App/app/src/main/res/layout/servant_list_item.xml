@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/green_corner"
+    android:elevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/servant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/basic">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:elevation="5dp"
+            android:src="@color/basicDark"
+            app:civ_border_color="@color/basicDark"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image"
+            android:layout_toRightOf="@+id/image"
+            android:maxWidth="150dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:text="Pawan Singh Harariya" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="#616161"
+            android:textSize="12sp"
+            tools:text="21/M" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="Rs. 200/hr" />
+
+        <TextView
+            android:id="@+id/availability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cost"
+            android:layout_toRightOf="@+id/image"
+            android:maxWidth="150dp"
+            android:textAllCaps="true"
+            android:textColor="@color/available"
+            android:textSize="13sp"
+            android:visibility="gone"
+            tools:text="Available S,M,T,W,T,F,S 8-12 12-4 4-8" />
+
+        <ImageView
+            android:id="@+id/rating_bg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/rating_bg"
+            android:layout_alignRight="@+id/rating_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:text="5.0" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="#616161"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="Distance: 21km" />
+
+        <TextView
+            android:id="@+id/eta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distance"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="#616161"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="ETA: 25min" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

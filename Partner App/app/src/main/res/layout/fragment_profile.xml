@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/loadwall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+        android:clickable="false"
+        android:elevation="10dp"
+        android:focusable="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creating Your Profile"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_bg">
+
+            <TextView
+                android:id="@+id/profile_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/profile_icon"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/user" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilePicture"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="24dp"
+                    android:elevation="8dp"
+                    android:src="@color/basicDark"
+                    app:civ_border_color="@color/blue"
+                    app:civ_border_width="1dp" />
+
+                <ImageView
+                    android:id="@+id/galleryView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@id/profilePicture"
+                    android:layout_alignBottom="@+id/profilePicture"
+                    android:elevation="9dp"
+                    android:src="@drawable/photo_camera"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/green_corner"
+                android:backgroundTint="@color/basicDark"
+                android:enabled="false"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:text="Father's Name/Husband's Name"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/nameOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/green_corner"
+                android:backgroundTint="@color/basicDark"
+                android:enabled="false"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:text="Mobile Number"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:id="@+id/mobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/green_corner"
+                android:backgroundTint="@color/basicDark"
+                android:enabled="false"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:text="Age"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/green_corner"
+                android:backgroundTint="@color/basicDark"
+                android:enabled="false"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/gender_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/green_corner"
+                    android:backgroundTint="@color/blue"
+                    android:buttonTint="@color/basic"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="Male"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/gender_female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/green_corner"
+                    android:backgroundTint="@color/basicDark"
+                    android:buttonTint="@color/blue"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="Female"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:text="City"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/green_corner"
+                android:backgroundTint="@color/basicDark"
+                android:enabled="false"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:text="Locality"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:id="@+id/locality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/green_corner"
+                android:backgroundTint="@color/basicDark"
+                android:enabled="false"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:text="Pincode"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/green_corner"
+                android:backgroundTint="@color/basicDark"
+                android:enabled="false"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="8dp"
+                android:text="* All your searches will be based on your pincode"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:text="Work Cost per hour"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:id="@+id/workRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/green_corner"
+                android:backgroundTint="@color/basicDark"
+                android:enabled="false"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:text="Write something about yourself"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+            <EditText
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/green_corner"
+                android:backgroundTint="@color/basicDark"
+                android:enabled="false"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                android:text="Select categories you wish to work as"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/category_maid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/green_corner"
+                android:backgroundTint="@color/basicDark"
+                android:buttonTint="@color/blue"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="   Maid"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/category_japaMaid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/green_corner"
+                android:backgroundTint="@color/basicDark"
+                android:buttonTint="@color/blue"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="   Japa Maid"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/category_officeBoy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="48dp"
+                android:background="@drawable/green_corner"
+                android:backgroundTint="@color/basicDark"
+                android:buttonTint="@color/blue"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="   Office Boy"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/createProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/green_corner"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:text="Edit Profile"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

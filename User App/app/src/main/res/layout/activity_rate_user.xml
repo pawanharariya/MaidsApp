@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.psh.maids.Activities.RateUser">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_bg">
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/profile_icon"
+                android:text="Rate our staff"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/editbutton"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/user" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title">
+
+        <RelativeLayout
+            android:id="@+id/ratings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/rate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task Rating"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@id/task_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate1"
+                android:numStars="5"
+                android:progressTint="@color/rating_star"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/rate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/task_rating"
+                android:text="Time Rating"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/time_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate2"
+                android:numStars="5"
+                android:progressTint="@color/rating_star"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/rate3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_rating"
+                android:text="Behaviour Rating"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/behaviour_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate3"
+                android:numStars="5"
+                android:progressTint="@color/rating_star"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/rate4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/behaviour_rating"
+                android:text="Communication Rating"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/communication_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate4"
+                android:numStars="5"
+                android:progressTint="@color/rating_star"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/comment_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/communication_rating"
+                android:layout_marginTop="8dp"
+                android:text="Comment something"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:layout_below="@id/comment_label" />
+
+            <TextView
+                android:id="@+id/refer_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment"
+                android:layout_marginTop="8dp"
+                android:text="Refer to other customers"
+                android:textColor="@color/black" />
+
+            <Switch
+                android:id="@+id/isReferred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comment"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/refer_label" />
+
+            <TextView
+                android:id="@+id/refer_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/refer_label"
+                android:layout_marginTop="16dp"
+                android:text="@string/refer_text"
+                android:textColor="#424242" />
+
+
+            <Button
+                android:id="@+id/submit_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/refer_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/green_corner"
+                android:text="Submit" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">CustomerPanel</string>
+    <string-array name="hours">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+        <item>15</item>
+        <item>24</item>
+    </string-array>
+    <string-array name="minutes">
+        <item>00</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+    </string-array>
+    <string-array name="booking_type">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="refer_text">Referring to other customers will show your contact to them and they can connect to you so that they can make better decisions to hire this staff member.</string>
+    <string name="razorpay_api_id">rzp_test_JVrR77YksVRvZg</string>
+</resources>

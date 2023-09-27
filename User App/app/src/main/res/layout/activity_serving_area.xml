@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context="com.psh.maids.Activities.ServingArea">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/basicDark"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/blue_bg"
+                android:elevation="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Serving Area"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Information"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Currently we provide 24 hours/ live-in maid in the following areas." />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="8dp">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Female Maids"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Delhi, Mumbai, Chennai"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Male Maids"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Delhi, Mumbai, Chennai"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Married Couples"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="All Over India"
+                    android:textColor="@color/black" />
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Charges"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="One month salary of the maid + 18%GS\n Pay at the time of joining" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="Need Help?"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/centre"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/help"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/help"
+                android:layout_marginBottom="5dp"
+                android:layout_toLeftOf="@+id/centre"
+                android:background="@drawable/green_corner"
+                android:paddingLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:paddingRight="20dp"
+                android:text="Call Us"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignLeft="@+id/call"
+                android:layout_alignTop="@+id/call"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:elevation="10dp"
+                android:src="@drawable/telephone" />
+
+            <Button
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/help"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/centre"
+                android:background="@drawable/green_corner"
+                android:paddingLeft="40dp"
+                android:paddingRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Email Us"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignLeft="@+id/email"
+                android:layout_alignTop="@+id/email"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:elevation="10dp"
+                android:src="@drawable/mail" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

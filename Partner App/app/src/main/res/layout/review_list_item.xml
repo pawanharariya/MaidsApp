@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:elevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:elevation="5dp"
+            android:src="@color/basicDark" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:text="Pawan Singh Harariya" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="#616161"
+            android:textSize="12sp"
+            tools:text="New Delhi" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/city"
+            android:textColor="#616161"
+            android:textSize="12sp"
+            tools:text="12/9/19" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/image"
+            android:text="He is talented app developer with working experience as executive app developer at NIT Hamirpur's App TeamHe is talented app developer with working experience as executive app developer at NIT Hamirpur's App Team."
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/image"
+            android:layout_toLeftOf="@+id/rating"
+            android:scaleType="fitXY"
+            android:src="@drawable/favourites" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/star"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:text="5.0" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingBottom="10dp">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:elevation="25dp"
+        android:src="@drawable/chat1"
+        app:backgroundTint="#fff" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profile_bg"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/profile_bg"
+                android:elevation="4dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:elevation="4dp"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:text="Pawan Singh" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:elevation="4dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:text="Age: 21" />
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/age"
+                android:layout_centerHorizontal="true"
+                android:elevation="4dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:text="Male" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/servant_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:elevation="8dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@color/basic"
+                app:civ_border_color="@color/basicDark"
+                app:civ_border_width="3dp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:src="@drawable/arrow_right" />
+
+            <LinearLayout
+                android:id="@+id/basic_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/servant_image"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:paddingRight="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="4.0" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/favourites" />
+
+                <TextView
+                    android:id="@+id/cost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:text="Rs. 400/hr" />
+
+                <TextView
+                    android:id="@+id/availability"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/available"
+                    android:textSize="20sp"
+                    tools:text="Available" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/basic_info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/basic_info"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:text="Ratings"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Service Cost"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Status"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/basic_info2"
+                android:layout_marginTop="20dp"
+                android:background="@color/basicDark"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Distance Away"-->
+                <!--                    android:textColor="@color/black" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/distance"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    tools:text="25kms" />-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="5dp"-->
+                <!--                    android:text="Estimated Arrival Time"-->
+                <!--                    android:textColor="@color/black" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/eta"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    tools:text="25mins" />-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="5dp"-->
+                <!--                    android:text="Working Time"-->
+                <!--                    android:textColor="@color/black" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/working_time"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    tools:text="7 AM to 3 PM daily" />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Parent's Name/Husband's Name"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/name_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Mr. XYZ" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="About"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="He is talented app developer with working experience as executive app developer at NIT Hamirpur's App Team." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Address"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hira revatio puram, Himmatpur Talla, Block, Haldwani" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/previous_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/info"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="10dp"
+                android:text="View Previous Employer References"
+                android:textAlignment="textStart"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/previous_info"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:elevation="10dp"
+                android:src="@drawable/next" />
+
+            <Button
+                android:id="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/previous_info"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="10dp"
+                android:text="View Performance Details"
+                android:textAlignment="textStart"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/feedback"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:elevation="10dp"
+                android:src="@drawable/next" />
+
+            <Button
+                android:id="@+id/reviews"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/feedback"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="10dp"
+                android:text="View Reviews"
+                android:textAlignment="textStart"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/reviews"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:elevation="10dp"
+                android:src="@drawable/next" />
+
+            <Button
+                android:id="@+id/add_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reviews"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/green_corner"
+                android:text="Add to Cart"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/book_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_to_cart"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/green_corner"
+                android:text="BOOK NOW"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/references_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/list"
+            layout="@layout/references" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/feedback_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:visibility="gone">
+
+        <include layout="@layout/performance_ratings" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/booking_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:visibility="gone">
+
+        <include layout="@layout/booking_time" />
+    </LinearLayout>
+</RelativeLayout>

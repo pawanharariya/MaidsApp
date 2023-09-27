@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:clickable="false"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:onClick="removeFilterDialog"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:onClick="removeFilterDialog"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/exit" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Filter your search results"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Day of Working"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/all_days"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/round_not_selected"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sunday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_not_selected"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="S"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/monday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_not_selected"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="M"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tuesday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_not_selected"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="T"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/wednesday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_not_selected"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="W"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/thursday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_not_selected"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="T"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/friday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_not_selected"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="F"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/saturday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_not_selected"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="S"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Slot"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="TO" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:onClick="applyFilters"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/check" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:onClick="removeFilterDialog"
+        android:layout_weight="1"/>
+</LinearLayout>
